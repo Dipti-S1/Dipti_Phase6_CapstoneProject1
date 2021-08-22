@@ -12,7 +12,7 @@ public class Todo {
     private String user;
     
     @Size(min=10, message="Enter at least 10 Characters...")
-    private String prodname;
+    private String desc;
 
     private Date targetDate;
     private boolean inStock;
@@ -22,26 +22,27 @@ public class Todo {
     		super();
     }
     
-    public Todo(int id, String user, String prodname, Date targetDate,
+   /* public Todo(int id, String user, String desc, Date targetDate,
             boolean inStock,int cost) {
         super();
         this.id = id;
         this.user = user;
-        this.prodname = prodname;
+        this.desc = desc;
         this.targetDate = targetDate;
         this.inStock = inStock;
         this.pcost = pcost;
-    }
+    }*/
     
-   /* public Todo(int id, String user, String desc, Date targetDate,
+    public Todo(int id, String user, String desc, Date targetDate,boolean inStock,
             int cost) {
         super();
         this.id = id;
         this.user = user;
         this.desc = desc;
         this.targetDate = targetDate;
+        this.inStock= inStock;
         this.pcost = cost;
-    }*/
+    }
 
     public int getPcost() {
 		return pcost;
@@ -68,11 +69,11 @@ public class Todo {
     }
 
     public String getprodname() {
-        return prodname;
+        return desc;
     }
 
-    public void setprodname(String prodname) {
-        this.prodname = prodname;
+    public void setprodname(String desc) {
+        this.desc = desc;
     }
 
     public Date getTargetDate() {
@@ -83,7 +84,7 @@ public class Todo {
         this.targetDate = targetDate;
     }
 
-    public boolean inStock() {
+   public boolean inStock() {
         return inStock;
     }
 
@@ -120,8 +121,8 @@ public class Todo {
     @Override
     public String toString() {
         return String.format(
-                "Todo [id=%s, user=%s, desc=%s, targetDate=%s, inStock=%s]", id,
-                user, prodname, targetDate, pcost);
+                "Todo [id=%s, user=%s, desc=%s, targetDate=%s,inStock=%s,pcost=%s]", id,
+                user, desc, targetDate,inStock, pcost);
     }
 
 }

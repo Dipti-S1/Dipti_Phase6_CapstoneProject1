@@ -10,12 +10,11 @@
 
 <body>
 	<div class="container">
-
-
+       <img src="https://techexactly.com/wp-content/uploads/2020/06/medical2.jpg" alt="Healthcare Application Development Guide: Types, Features, Challenges -  techexactly" jsname="HiaYvf" jsaction="load:XAeZkd;" class="n3VNCb" data-noaft="1" style="width: 1350px; height: 300.668px; margin: 9.516px 0px;"><br><br>
 		<form:form method="post" commandName="todo">
 			<form:hidden path="id" />
 			<fieldset class="form-group">
-				<form:label path="desc">Product Name</form:label>
+				<form:label path="desc">Medicine Name</form:label>
 				<form:input path="desc" type="text" class="form-control"
 					required="required" />
 				<form:errors path="desc" cssClass="text-warning" />

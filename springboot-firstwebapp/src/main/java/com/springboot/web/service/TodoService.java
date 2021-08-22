@@ -19,10 +19,10 @@ public class TodoService {
     private static int todoCount = 3;
 
     static {
-        todos.add(new Todo(1, "Dipti", "Sports Shoes- Nike", new Date(),true,
+        todos.add(new Todo(1, "Dipti", "Paracetamol", new Date(),true,
                 10000));
-        todos.add(new Todo(2, "Dipti", "Sports Shoes-Addidas ", new Date(),true, 20000));
-        todos.add(new Todo(3, "Dipti", "Sports Shoes-Sparx", new Date(),true,
+        todos.add(new Todo(2, "Dipti", "Levera XYZ ", new Date(),true, 20000));
+        todos.add(new Todo(3, "Dipti", "mnsdertcvfg", new Date(),true,
                 50000));
     }
 
@@ -50,10 +50,11 @@ public class TodoService {
     		todos.add(todo);
     }
 
-    public void addTodo(String name, String prodname, Date targetDate,
+    public void addTodo(String name, String desc, Date targetDate,
             boolean inStock,int pcost) {
         //todos.add(new Todo(++todoCount, name, desc, targetDate, inStock, pcost));
-         toDoDao.save(new Todo(++todoCount, name, prodname, targetDate, inStock, pcost));
+         //toDoDao.save(new Todo(++todoCount, name, prodname, targetDate, inStock, pcost));
+    	toDoDao.save(new Todo(++todoCount, name, desc, targetDate, inStock, pcost));
     }
 
     public void deleteTodo(int id) {

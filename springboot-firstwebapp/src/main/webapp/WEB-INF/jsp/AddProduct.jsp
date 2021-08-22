@@ -4,7 +4,7 @@
 <html>
 
 <head>
-<title>SPORT SHOES WEBPAGE </title>
+<title>MEDICARE WEBPAGE </title>
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
 <body>
 	<div class="container">
 		<table class="table table-striped">
-			<caption>Your Products are</caption>
+			<caption>Your medicines are</caption>
 			<thead>
 				<tr>
 					<th>ProductName</th>
